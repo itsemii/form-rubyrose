@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Formulário de pesquisa da Ruby Rose</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulário de pesquisa da Ruby Rose</title>
+  <link rel="stylesheet" href="styles.css">
+  <!--<img class="background" src=" ">-->
+</head>
+
+<body>
+  <div>
     <h1 id="title">Formulário de satisfação</h1>
     <h2>Obrigado por nos ajudar a melhorar nossa marca!</h2>
-    <form id="survey-form">
-      <fieldset>
-      <label for="name-label" id="name-label">Nome: <input id="name" type="text" placeholder="Nome" name="name" required/></label>
-      <label for="email" id="email-label">E-mail: <input id="email" type="email" placeholder="E-mail" name="email" required/></label>
-      <label for="number-label" id="number-label">Idade: <input id="number" type="number" min="13" max="120" name="number" placeholder="Idade"/></label>
-      </fieldset>
-      <fieldset>
+  </div>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name-label" id="name-label">Nome: <input id="name" type="text" placeholder="Nome" name="name"
+          required /></label>
+      <label for="email" id="email-label">E-mail: <input id="email" type="email" placeholder="E-mail" name="email"
+          required /></label>
+      <label for="number-label" id="number-label">Idade: <input id="number" type="number" min="13" max="120"
+          name="number" placeholder="Idade" /></label>
+    </fieldset>
+    <fieldset>
       <label for="referrer">Qual a linha é a sua favorita da Ruby Rose?
         <select id="dropdown">
           <option value="">Selecione</option>
@@ -24,25 +32,28 @@
           <option value="4">Mood</option>
           <option value="5">Glass</option>
         </select>
-        </fieldset>
-      <fieldset>
+    </fieldset>
+    <fieldset>
       </label>
       <leged>Você recomendaria a Ruby Rose para um amigo?</legend>
-      <label for="opcao-sim"><input id="sim" type="radio" name="recomendacao" value="sim"/>Sim</label>
-      <label for="opcao-nao"><input id="nao" type="radio" name="recomendacao" value="nao"/>Não</label>
-      </fieldset>
-      <fieldset>
-        <p>O que você gostaria que fosse melhorado nos produtos da nossa marca?</p>
-        <label><input name="prefer" value="batons" type="checkbox"/> Boca</label>
-        <label><input name="prefer" value="skin-care" type="checkbox"/> Skin Care</label>
-        <label><input name="prefer" value="rosto" type="checkbox"/> Rosto</label>
-        <label><input name="prefer" value="olhos" type="checkbox"/> Olhos</label>
-        <label><input name="prefer" value="perfumaria" type="checkbox"/> Perfumaria</label>
-        <p>Algum comentário ou sugestão?</p>
-        <textarea id="comentarios" name="comentario" placeholder="Digite seu comentário aqui... "></textarea>
-      </fieldset>
-      <input id="submit" type="submit" onclick="Enviar();" value="Enviar"/>
-    </form>
-    <script src="script.js"></script>
-  </body>
+        <label for="opcao-sim"><input id="sim" type="radio" name="recomendacao" value="sim" /> Sim </label>
+        <label for="opcao-nao"><input id="nao" type="radio" name="recomendacao" value="nao" /> Não </label>
+    </fieldset>
+    <fieldset>
+      <p>O que você gostaria que fosse melhorado nos produtos da nossa marca?</p>
+      <label><input name="prefer" value="batons" type="checkbox" /> Boca</label>
+      <label><input name="prefer" value="skin-care" type="checkbox" /> Skin Care</label>
+      <label><input name="prefer" value="rosto" type="checkbox" /> Rosto</label>
+      <label><input name="prefer" value="olhos" type="checkbox" /> Olhos</label>
+      <label><input name="prefer" value="perfumaria" type="checkbox" /> Perfumaria</label>
+    </fieldset>
+    <fieldset>
+      <p>Algum comentário ou sugestão?</p>
+      <textarea id="comentarios" name="comentario" placeholder="Digite seu comentário aqui... "></textarea>
+    </fieldset>
+    <input id="submit" type="submit" onclick="Enviar();" value="Enviar" />
+  </form>
+  <script src="script.js"></script>
+</body>
+
 </html>
